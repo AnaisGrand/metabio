@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/metabio/example/comparative"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     ontologyIRI="http://purl.org/metabio/example/comparative"
+     versionIRI="http://purl.org/metabio/example/comparative/1.0.0">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://purl.org/metabio</Import>
+    <Declaration>
+        <Class IRI="#Broad_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LBS_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marattia_LBS_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrow_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branched"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branched_Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branched_NonLaminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branchiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laminated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonLaminated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonLaminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Presence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unbranched"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unbranched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unbranched_Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Broad_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS_With_Lamina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marattia_LBS_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Narrow_Webbing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S_Branched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#S_Unbranched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Webbing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Branched"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Branched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Branched_NonLaminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Branchiness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Equisetum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F_Lamina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F_branched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#F_unbranched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H1Nd1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypothesis1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypothesis2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypothesis3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS_Branchiness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS_Lamination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LBS_Presence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laminated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lamination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marattia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marattia_LBS_Branchiness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marattia_LBS_Lamination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marattia_LBS_Presence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NonLaminated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NonLaminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ophioglossum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Presence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pseudosporochnus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unbranched"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unbranched_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unbranched_Laminated_LBS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zygopteris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#absent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isBranched"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isBranched2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isBranched3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isLaminated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isLaminated2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isNonLaminated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isUnbranched"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isUnbranched2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#present"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Broad_Webbing"/>
+        <Class IRI="#Webbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marattia_LBS_Webbing"/>
+        <Class IRI="#LBS_Webbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narrow_Webbing"/>
+        <Class IRI="#Webbing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched"/>
+        <Class IRI="#Branchiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched_LBS"/>
+        <Class IRI="#LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched_Laminated_LBS"/>
+        <Class IRI="#Branched_LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched_Laminated_LBS"/>
+        <Class IRI="#Laminated_LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched_NonLaminated_LBS"/>
+        <Class IRI="#Branched_LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branched_NonLaminated_LBS"/>
+        <Class IRI="#NonLaminated_LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laminated"/>
+        <Class IRI="#Lamination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laminated_LBS"/>
+        <Class IRI="#LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonLaminated"/>
+        <Class IRI="#Lamination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonLaminated_LBS"/>
+        <Class IRI="#LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unbranched"/>
+        <Class IRI="#Branchiness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unbranched_LBS"/>
+        <Class IRI="#LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unbranched_Laminated_LBS"/>
+        <Class IRI="#Laminated_LBS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unbranched_Laminated_LBS"/>
+        <Class IRI="#Unbranched_LBS"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#Broad_Webbing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Character"/>
+        <NamedIndividual IRI="#LBS_Webbing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Similarity"/>
+        <NamedIndividual IRI="#LBS_With_Lamina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Character"/>
+        <NamedIndividual IRI="#Marattia_LBS_Webbing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#Narrow_Webbing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Similarity"/>
+        <NamedIndividual IRI="#S_Branched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Similarity"/>
+        <NamedIndividual IRI="#S_Unbranched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Quality"/>
+        <NamedIndividual IRI="#Webbing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#Branched"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Branched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Branched_NonLaminated_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Quality"/>
+        <NamedIndividual IRI="#Branchiness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Genus"/>
+        <NamedIndividual IRI="#Equisetum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Feature"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Feature"/>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Feature"/>
+        <NamedIndividual IRI="#F_branched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Feature"/>
+        <NamedIndividual IRI="#F_unbranched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H1Nd1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Node"/>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Tree"/>
+        <NamedIndividual IRI="#Hypothesis1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Tree"/>
+        <NamedIndividual IRI="#Hypothesis2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Tree"/>
+        <NamedIndividual IRI="#Hypothesis3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Character"/>
+        <NamedIndividual IRI="#LBS_Branchiness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Character"/>
+        <NamedIndividual IRI="#LBS_Lamination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Character"/>
+        <NamedIndividual IRI="#LBS_Presence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#Laminated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Quality"/>
+        <NamedIndividual IRI="#Lamination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Genus"/>
+        <NamedIndividual IRI="#Marattia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#NonLaminated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#NonLaminated_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Genus"/>
+        <NamedIndividual IRI="#Ophioglossum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Quality"/>
+        <NamedIndividual IRI="#Presence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Genus"/>
+        <NamedIndividual IRI="#Pseudosporochnus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#QualityState"/>
+        <NamedIndividual IRI="#Unbranched"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Unbranched_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Entity"/>
+        <NamedIndividual IRI="#Unbranched_Laminated_LBS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Genus"/>
+        <NamedIndividual IRI="#Zygopteris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Presence"/>
+        <NamedIndividual IRI="#absent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isBranched"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isBranched2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isBranched3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isLaminated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isLaminated2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isNonLaminated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isUnbranched"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/metabio#Qualification"/>
+        <NamedIndividual IRI="#isUnbranched2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Presence"/>
+        <NamedIndividual IRI="#present"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityDomain"/>
+        <NamedIndividual IRI="#LBS_With_Lamina"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityRange"/>
+        <NamedIndividual IRI="#LBS_With_Lamina"/>
+        <NamedIndividual IRI="#Unbranched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CharacterTaxon"/>
+        <NamedIndividual IRI="#Marattia_LBS_Webbing"/>
+        <NamedIndividual IRI="#Marattia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterRange"/>
+        <NamedIndividual IRI="#Marattia_LBS_Webbing"/>
+        <NamedIndividual IRI="#Broad_Webbing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityDomain"/>
+        <NamedIndividual IRI="#S_Branched_LBS"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityRange"/>
+        <NamedIndividual IRI="#S_Branched_LBS"/>
+        <NamedIndividual IRI="#Branched_NonLaminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityDomain"/>
+        <NamedIndividual IRI="#S_Unbranched_LBS"/>
+        <NamedIndividual IRI="#Unbranched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SimilarityDomain"/>
+        <NamedIndividual IRI="#S_Unbranched_LBS"/>
+        <NamedIndividual IRI="#Unbranched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Equisetum"/>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Equisetum"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Equisetum"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSimilarity"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+        <NamedIndividual IRI="#LBS_With_Lamina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasCharacter"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+        <NamedIndividual IRI="#LBS_Lamination"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasState"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasState"/>
+        <NamedIndividual IRI="#F_Lamina"/>
+        <NamedIndividual IRI="#Laminated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+        <NamedIndividual IRI="#H1Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasState"/>
+        <NamedIndividual IRI="#F_PresenceLBS"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSimilarity"/>
+        <NamedIndividual IRI="#F_branched_LBS"/>
+        <NamedIndividual IRI="#S_Branched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_branched_LBS"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSimilarity"/>
+        <NamedIndividual IRI="#F_unbranched_LBS"/>
+        <NamedIndividual IRI="#S_Unbranched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#appears"/>
+        <NamedIndividual IRI="#F_unbranched_LBS"/>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#includes"/>
+        <NamedIndividual IRI="#H1Nd1"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#includes"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#includes"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasRoot"/>
+        <NamedIndividual IRI="#Hypothesis1"/>
+        <NamedIndividual IRI="#H1Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasRoot"/>
+        <NamedIndividual IRI="#Hypothesis2"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#hasRoot"/>
+        <NamedIndividual IRI="#Hypothesis3"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterDomain"/>
+        <NamedIndividual IRI="#LBS_Branchiness"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterRange"/>
+        <NamedIndividual IRI="#LBS_Branchiness"/>
+        <NamedIndividual IRI="#Branchiness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterDomain"/>
+        <NamedIndividual IRI="#LBS_Lamination"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterRange"/>
+        <NamedIndividual IRI="#LBS_Lamination"/>
+        <NamedIndividual IRI="#Lamination"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterDomain"/>
+        <NamedIndividual IRI="#LBS_Presence"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#characterRange"/>
+        <NamedIndividual IRI="#LBS_Presence"/>
+        <NamedIndividual IRI="#Presence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Marattia"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Marattia"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Marattia"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Ophioglossum"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Ophioglossum"/>
+        <NamedIndividual IRI="#H2Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Ophioglossum"/>
+        <NamedIndividual IRI="#H3Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Pseudosporochnus"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Pseudosporochnus"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Pseudosporochnus"/>
+        <NamedIndividual IRI="#H1Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Zygopteris"/>
+        <NamedIndividual IRI="#H1Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Zygopteris"/>
+        <NamedIndividual IRI="#H3Nd1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Member"/>
+        <NamedIndividual IRI="#Zygopteris"/>
+        <NamedIndividual IRI="#H2Nd2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isBranched"/>
+        <NamedIndividual IRI="#Branched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isBranched"/>
+        <NamedIndividual IRI="#Branched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isBranched"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isBranched2"/>
+        <NamedIndividual IRI="#Branched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isBranched2"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isBranched2"/>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isBranched3"/>
+        <NamedIndividual IRI="#Branched_NonLaminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isBranched3"/>
+        <NamedIndividual IRI="#Branched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isBranched3"/>
+        <NamedIndividual IRI="#NonLaminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+        <NamedIndividual IRI="#Branched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+        <NamedIndividual IRI="#Laminated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isBranchedLaminated"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isLaminated"/>
+        <NamedIndividual IRI="#Laminated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isLaminated"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isLaminated"/>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isLaminated2"/>
+        <NamedIndividual IRI="#Laminated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isLaminated2"/>
+        <NamedIndividual IRI="#Branched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isLaminated2"/>
+        <NamedIndividual IRI="#Branched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isNonLaminated"/>
+        <NamedIndividual IRI="#NonLaminated"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isNonLaminated"/>
+        <NamedIndividual IRI="#NonLaminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isNonLaminated"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isUnbranched"/>
+        <NamedIndividual IRI="#Unbranched_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isUnbranched"/>
+        <NamedIndividual IRI="#Unbranched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isUnbranched"/>
+        <NamedIndividual IRI="#LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#addQualityState"/>
+        <NamedIndividual IRI="#isUnbranched2"/>
+        <NamedIndividual IRI="#Unbranched"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#posQualification"/>
+        <NamedIndividual IRI="#isUnbranched2"/>
+        <NamedIndividual IRI="#Unbranched_Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/metabio#preQualification"/>
+        <NamedIndividual IRI="#isUnbranched2"/>
+        <NamedIndividual IRI="#Laminated_LBS"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
